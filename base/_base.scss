@@ -1,0 +1,109 @@
+/* Base Styles ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  margin: 20px auto 0;
+  line-height: 1.2;
+  text-align: center;
+  font-family: $font-stack-paragraph;
+  @include mq('m') {
+    font-size: 1.1em;
+  }
+  @include mq('l') { //1200
+    max-width: $max-width;
+    font-size: 1.3em;
+  }
+  @include mq('xl') { //1920
+    font-size: 1.6em;
+  }
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: $font-stack-heading;
+  font-size: 2em;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  @include mq('l') {
+    font-size: 2.5em;
+  }
+  @include mq('xl') {
+    font-size: 2.2em;
+  }
+}
+
+h2,
+h3 {
+  @include mq('l') {
+    font-size: 1.75em;
+  }
+  @include mq('xl') {
+    font-size: 1.6em;
+  }
+}
+
+h4 {
+  font-size: 1em;
+  @include mq('l') {
+    font-size: 1.3em;
+  }
+  @include mq('xl') {
+    font-size: 1.35em;
+  }
+}
+
+hr {
+  max-width: 90%;
+}
+
+small {
+  font-size: 85%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0 auto 1.25em;
+  max-width: 1025px;
+  @include mq('m') {
+    font-size: 1.15em;
+  }
+  @include mq('l') { //1200
+    max-width: 1225px;
+    font-size: 1.3em;
+  }
+  @include mq('xl') { //1920
+    max-width: 1425px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    opacity: 0.8;
+    color: $color-text-dark;
+  }
+}
+
+details {
+  padding: 3px;
+}
+
+summary {
+  padding: 5px 3px 10px;
+}
+
+summary ~ p {
+  margin: 0;
+}

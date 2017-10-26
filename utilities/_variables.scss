@@ -1,0 +1,33 @@
+// ======================================
+//  Variables
+// ======================================
+
+$color-primary: #8F1D21;
+$color-primary-light: lighten($color-primary, 30%);
+$color-primary-dark: darken($color-primary, 30%);
+
+$color-secondary: #303436;
+
+$color-accent: #1d258f;
+
+$color-mix: mix($color-primary, $color-secondary, 50%);
+
+$color-text: #eee;
+$color-text-light: lighten($color-text, 30%);
+$color-text-dark: darken($color-secondary, 30%);
+
+// Fonts
+$font-stack-heading: 'Roboto', sans-serif;
+$font-stack-paragraph: 'Montserrat', sans-serif;
+$font-stack-compliment: 'Rubik', sans-serif;
+
+// Layout
+$max-width: 2200px;
+$gutter: 3px;
+
+// Breakpoints
+$break-xs: 480px;
+$break-s: 768px;
+$break-m: 960px; 
+$break-l: 1440px;
+$break-xl: 1920px;

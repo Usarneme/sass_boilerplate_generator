@@ -1,0 +1,21 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+.img-featured {
+  max-width: 40vw;
+  max-height: 40vh;
+  margin: 15px auto;
+  border-radius: 50%;
+  border: 3px solid #e8e8e8;
+    @include mq('xl') {
+    max-width: 600px;
+  }
+}
+
+.portfolio-image {
+  padding: 15px;
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+}

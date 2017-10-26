@@ -1,0 +1,180 @@
+// ======================================
+//  Layout Container Styles
+// ======================================
+
+// Main content
+.main-content {
+  @include flexy($disp: flex, $wrap: wrap);
+  @include mq('m') {
+    @include center;
+  }
+}
+
+.hero {
+  @include flexy($disp: flex, $wrap: wrap, $dir: row, $justify: center);
+  padding: 1em;
+  background-color: #fff;
+}
+
+.headline {
+  padding: 25px 0 0 0;
+}
+
+.header-div-right,
+.header-div-left {
+  @include center;
+  max-width: 880px;
+  z-index: 100;
+  @include mq('s') {
+    @include flexy($disp: flex, $dir: column);
+    @include flex-grow(1);
+    max-width: 49%;
+  }
+}
+
+.header-div-right {
+  margin-top: 20px;
+  @include mq('xs') {
+    padding: 30px;
+  }
+  @include mq('m') {
+    padding: 40px;
+  }
+  @include mq('l') {
+    margin-top: 70px;
+    padding: 80px 60px 40px 5px;
+  }
+  @include mq('xl') {
+    margin-top: 100px;
+    padding-top: 100px;
+  }
+}
+
+.header-img-text {
+  max-width: 460px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.image-div {
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* Code to force IE to cover background images */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pdx1366.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pdx1366.jpg', sizingMethod='scale')";
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.icons-container {
+  background: url('../img/Aerial.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Aerial.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Aerial.jpg', sizingMethod='scale')";
+}
+
+.code-container {
+  background: url('../img/pdx1366.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pdx1366.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pdx1366.jpg', sizingMethod='scale')";
+}
+
+.studied-container {
+  border-top: none!important;
+  background: url('../img/Cascades1366.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Cascades1366.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Cascades1366.jpg', sizingMethod='scale')";
+}
+
+.practiced-container {
+  background: url('../img/Union1366.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Union1366.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Union1366.jpg', sizingMethod='scale')";
+}
+
+.share-container {
+  background: url('../img/Steel1366.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Steel1366.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Steel1366.jpg', sizingMethod='scale')";
+}
+
+.banner {
+  padding: 40px 0;
+  margin: 25px auto;
+  // color: $color-text;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  // h3 {
+  //   text-shadow: 1px 1px black;  
+  // }  
+}
+
+.textbox {
+  padding: 10px;
+  margin: 25px auto;
+  background-color: rgba(238,238,238, 0.85);
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.5);
+  @include mq('m') {
+    padding: 25px;
+    margin: 25px 0;
+    }
+  @include mq('l') {
+    padding: 35px;
+    margin: 50px;
+    }
+  @include mq('xl') {
+    padding: 35px 100px;
+    margin: 50px 100px;
+  }
+  &:hover {
+    background-color: rgba(238,238,238, 0.9);    
+  }
+}
+
+.notes {
+  padding-bottom: 12px;
+}
+
+.card {
+  @include flex(1 per-line(1));
+  @include justify-content(space-around);
+  margin: $gutter 0;
+  color: $color-secondary;
+  padding: 25px 15px 25px;
+  background: url('../img/overlay.png');
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+  h1 {
+    line-height: 1.25;
+    margin: 0.35em 0 0;
+  }
+  &:hover {
+    color: $color-primary;
+  }
+  @include mq('s') {
+    @include flex(1 per-line(2));
+    margin: 10px 5px;
+  }
+  @include mq('m') {
+    @include flex(1 per-line(3));
+  }
+  @include mq('l') {
+    @include flex(1 per-line(4));
+    margin: 20px 10px;
+  }
+  @include mq('xl') {
+    @include flex(1 per-line(5));
+    margin: 30px;    
+  }
+}

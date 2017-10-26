@@ -1,0 +1,56 @@
+// ======================================
+//  Button Styles
+// ======================================
+
+%btn {
+  display: block;
+  cursor: pointer;
+  max-width: 36rem;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0.75em;
+  margin: $gutter*2 auto;
+  text-transform: uppercase;
+  border-color: $color-secondary;
+  transition: background-color 0.3s cubic-bezier(0,-0.65,1,1.91), border-color 0.3s cubic-bezier(0,-0.65,1,1.91);
+  &:hover {
+    opacity: 0.9;
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    border-color: #eee;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+.btn {
+  &-header {
+    @extend %btn;
+    i {
+      color: $color-secondary;
+    }
+  }
+  &-social {
+    @extend %btn;
+    display: inline-block;
+  }
+  &-info {
+    @extend %btn;
+    background-color: #eee;
+    &:hover {
+      background-color: #303436;
+    }
+  }
+  &-footer {
+    @extend %btn;
+    border-color: rgba(255,255,255,0.15);
+    background-color: #eee;
+    &:hover {
+      // border-color: $color-secondary;
+      // background-color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// ======================================
+//  Helper Placeholders
+// ======================================
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+%clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}

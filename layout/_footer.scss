@@ -1,0 +1,51 @@
+// ======================================
+//  Footer Styles
+// ======================================
+
+footer {
+  color: $color-text;
+  padding-top: 10px;
+}
+
+.main-footer {
+  @include flexy($disp: flex, $wrap: wrap);
+}
+
+.footer-col {
+  @include flex(1 per-line(1));
+  @include justify-content(space-around);
+  padding: 1em;
+  margin-top: 0.8em;
+  min-width: 250px;
+  min-height: 250px;
+  background-color: $color-secondary;
+  @include mq('s') {
+    @include flex(1 per-line(2));
+    margin: 1px;
+  }
+  @include mq('m') {
+    @include flex(1 per-line(3));
+    margin: 7px;
+  }
+  @include mq('l') {
+    @include flex(1 per-line(4));
+  }
+  @include mq('xl') {
+    @include flex(1 per-line(5));
+    margin: 5px;
+  }
+}
+
+.footer-bottom {
+  max-width: 100vw;
+  padding-top: 1rem;
+  a {
+    color: $color-text-dark;
+  }
+  a:hover {
+    color: $color-secondary;
+  }
+  @include mq('l') {
+    padding-top: 1.5rem;
+  }
+}

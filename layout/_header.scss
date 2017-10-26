@@ -1,0 +1,18 @@
+// ======================================
+//  Header Styles
+// ======================================
+
+.main-header {
+  h1 {
+  padding: 10px;
+  min-height: 40px;
+  }
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    color: $color-accent;
+    @include mq('l') {
+      font-size: 1.5em;
+    }
+  }
+}
