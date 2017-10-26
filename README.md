@@ -13,26 +13,34 @@ Copy and configure the files as you need them, or compile them into a single fil
 sass style.scss:style.css
 ```
 
-Includes:
-*Utilities
-	'utilities/variables'
-        'utilities/mixins'
-        'utilities/functions'
-        'utilities/helpers'
+#### Includes:
 
-*Base Styles
-	'base/reset'
-        'base/base'
+* Utilities
+```
+'utilities/variables'
+'utilities/mixins'
+'utilities/functions'
+'utilities/helpers'
+```
+* Base Styles
+```
+'base/reset'
+'base/base'
+```
 
-*Component Styles
-	'components/buttons'
-        'components/icons'
-        'components/images'
+* Component Styles
+```
+'components/buttons'
+'components/icons'
+'components/images'
+```
 
-*Layout Styles
-	'layout/containers'
-        'layout/header'
-        'layout/footer'
+* Layout Styles
+```
+'layout/containers'
+'layout/header'
+'layout/footer'
+```
 
 With great utility such as adjustable variables to suit your needs:
 ```
